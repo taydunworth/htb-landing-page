@@ -6,115 +6,59 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
+const applyBtns = [
+  { text: "Apply as a Maker", url: "https://zfrmz.com/TpIzhMG8JkhwvxYHED0T" },
+  { text: "Apply as a Market", url: "https://zfrmz.com/uTsgL670SiJFdQfjP7mG" },
 ]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
+        src="../images/HTB-Logo.png"
+        width={360}
+        quality={100}
         formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
+        alt="Handmade Tampa Bay Logo"
       />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
+      <h2>A guide for the handmade industry in Tampa Bay</h2>
+      <p className={styles.intro}>{" "}
+        {applyBtns.map((link, i) => (
           <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
+            <a href={link.url}>{link.text}</a>
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
+      <p>Don’t worry – It’s free!</p>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+
+    <div className={styles.textCenter}>
+      <h2>This is a big deal for small businesses.</h2>
+      <p><strong>We’re still in the works,</strong> but our goal is to weave together our community of handmade businesses and markets in Tampa Bay into one collective directory to publicize the makers and the markets to one another, local brick-and-mortar businesses, and the Tampa Bay community.</p>
+      <h4>In simpler terms, we’re building a one-stop-shop directory of makers and markets.</h4>
+    </div>
+
+    <div className={styles.textCenter}>
+      <h2>It's all about handmade.</h2>
+      <p>Our definition of "handmade" requires that either you, as the business owner, or another member of your business makes and/or designs your items. The use of a production partner is accepted as long as the designs being used are a creation of your business. Ex. you design graphics that are screen printed onto apparel by a third-party.</p>
+    </div>
+
+    <div className={styles.textCenter}>
+      <h2>Tampa Bay is where it's at.</h2>
+      <p>Your business or market must be located within the Tampa Bay area to be eligible for our directory. Our definition of the "Tampa Bay area" includes the following counties:</p>
+      <ul>
+        <li>Citrus</li>
+        <li>Hernando</li>
+        <li>Hillsborough</li>
+        <li>Manatee</li>
+      </ul>
+      <ul>
+      < li>Pasco</li>
+        <li>Pinellas</li>
+        <li>Polk</li>
+        <li>Sarasota</li>
+      </ul>
+    </div>
   </Layout>
 )
 
@@ -123,6 +67,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Handmade Tampa Bay" />
 
 export default IndexPage

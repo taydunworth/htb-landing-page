@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Handmade Tampa Bay`,
+    description: `A guide for the handmade industry in Tampa BBay`,
+    author: `Handmade Tampa Bay`,
+    siteUrl: `https://handmadetampabay.com/`,
   },
   plugins: [
     `gatsby-plugin-image`,
