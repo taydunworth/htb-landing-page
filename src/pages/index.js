@@ -1,6 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import Logo from "../images/HTB-Logo.png";
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -13,23 +12,19 @@ const applyBtns = [
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/HTB-Logo.png"
-        width={360}
-        quality={100}
-        formats={["auto", "webp", "avif"]}
-        alt="Handmade Tampa Bay Logo"
-      />
-      <h2>A guide for the handmade industry in Tampa Bay</h2>
-      <p className={styles.intro}>{" "}
-        {applyBtns.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <a href={link.url}>{link.text}</a>
-          </React.Fragment>
-        ))}
-      </p>
-      <p>Don’t worry – It’s free!</p>
+    <div className="hero">
+      <div className={styles.textCenter} id="hero-width">
+        <img id="logo" src={Logo} alt="Handmade Tampa Bay Logo" />
+        <h2>A guide for the handmade industry in Tampa Bay</h2>
+        <p className="btns">
+          {applyBtns.map((link, i) => (
+            <React.Fragment key={link.url}>
+              <a className="primary-btn" href={link.url}>{link.text}</a>
+            </React.Fragment>
+          ))}
+        </p>
+        <p className="subtitle">Don’t worry – It’s free!</p>
+      </div>
     </div>
 
     <div className={styles.textCenter}>

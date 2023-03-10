@@ -6,13 +6,9 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
-      display: `flex`,
-      alignItems: `center`,
-      justifyContent: `space-between`,
     }}
   >
-    <Link to="/">
+    {/* <Link to="/">
       <StaticImage
         src="../images/HTB-Icon-1.png"
         loading="eager"
@@ -21,7 +17,7 @@ const Header = ({ siteTitle }) => (
         formats={["auto", "webp", "avif"]}
         alt="Handmade Tampa Bay Icon of a Palm Tree in a Circle"
       />
-    </Link>
+    </Link> */}
   </header>
 )
 
