@@ -1,0 +1,61 @@
+@media (max-width: 1150px) {
+    .btns {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .btns {
+        width: 100%;
+    }
+}
+
+@media (max-width: 930px) {
+    #hero-width {
+        top: -100px;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .btns > .primary-btn,
+    .btns > .secondary-btn {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .description,
+    .details {
+        padding: 40px 80px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav {
+        top: -20px;
+    }
+    
+}
+
+@media (max-width: 821px) {
+    .details {
+        display: flex;
+        flex-direction: column;;
+    }
+    .footer {
+        padding: 40px 80px;
+    }
+    #alt-logo {
+        position: relative;
+        left: -140px;
+    }
+    .subnav {
+        left: 0px;
+    }
+}
+
+@media (max-width: 778px) {
+    #hero-width {
+        width: 90%;
+    }
+}
