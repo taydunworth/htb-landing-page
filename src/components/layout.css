@@ -214,6 +214,7 @@ h2 {
   text-decoration: none;
   border-radius: 8px;
   font-size: .8em;
+  z-index: 1;
 }
 .secondary-btn:hover {
   background-color: var(--color-boardwalk);
