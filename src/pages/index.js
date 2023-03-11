@@ -27,7 +27,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className={styles.textCenter}>
+    <div className="description">
       <h2>This is a big deal for small businesses.</h2>
       <p><strong>We’re still in the works,</strong> but our goal is to weave together our community of handmade businesses and markets in Tampa Bay into one collective directory to publicize the makers and the markets to one another, local brick-and-mortar businesses, and the Tampa Bay community.</p>
       <h4>In simpler terms, we’re building a one-stop-shop directory of makers and markets.</h4>
