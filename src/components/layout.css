@@ -212,12 +212,15 @@ h2 {
   color: var(--color-deep-sea);
   padding-top: 30px;
 }
-.description {
+.description,
+.details {
   width: 100%;
   margin: 0;
-  background: var(--color-seashore);
   text-align: left;
   padding: 80px 200px;
+}
+.description {
+  background: var(--color-seashore);
 }
 .description h2 {
   font-family: var(--font-serif);
@@ -225,4 +228,34 @@ h2 {
   letter-spacing: 0;
   text-align: left;
   font-size: 2.5em;
+}
+.details h2 {
+  font-family: var(--font-serif);
+  text-transform: none;
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 1.5em;
+}
+.details {
+  background: #FFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+}
+#location-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#location,
+#loc-one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#handmade,
+#loc-two {
+  grid-area: 1 / 2 / 2 / 3;
 }

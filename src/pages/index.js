@@ -33,26 +33,30 @@ const IndexPage = () => (
       <h4>In simpler terms, we’re building a one-stop-shop directory of makers and markets.</h4>
     </div>
 
-    <div className={styles.textCenter}>
-      <h2>It's all about handmade.</h2>
-      <p>Our definition of "handmade" requires that either you, as the business owner, or another member of your business makes and/or designs your items. The use of a production partner is accepted as long as the designs being used are a creation of your business. Ex. you design graphics that are screen printed onto apparel by a third-party.</p>
-    </div>
+    <div className="details">
+      <div id="handmade">
+        <h2>It's all about handmade.</h2>
+        <p>Our definition of "handmade" requires that either you, as the business owner, or another member of your business makes and/or designs your items. The use of a production partner is accepted as long as the designs being used are a creation of your business. Ex. you design graphics that are screen printed onto apparel by a third-party.</p>
+      </div>
 
-    <div className={styles.textCenter}>
-      <h2>Tampa Bay is where it's at.</h2>
-      <p>Your business or market must be located within the Tampa Bay area to be eligible for our directory. Our definition of the "Tampa Bay area" includes the following counties:</p>
-      <ul>
-        <li>Citrus</li>
-        <li>Hernando</li>
-        <li>Hillsborough</li>
-        <li>Manatee</li>
-      </ul>
-      <ul>
-      < li>Pasco</li>
-        <li>Pinellas</li>
-        <li>Polk</li>
-        <li>Sarasota</li>
-      </ul>
+      <div id="location">
+        <h2>Tampa Bay is where it's at.</h2>
+        <p>Your business or market must be located within the Tampa Bay area to be eligible for our directory. Our definition of the "Tampa Bay area" includes the following counties:</p>
+        <div id="location-list">
+          <ul id="loc-one">
+            <li>Citrus</li>
+            <li>Hernando</li>
+            <li>Hillsborough</li>
+            <li>Manatee</li>
+          </ul>
+          <ul id="loc-two">
+          < li>Pasco</li>
+            <li>Pinellas</li>
+            <li>Polk</li>
+            <li>Sarasota</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </Layout>
 )
