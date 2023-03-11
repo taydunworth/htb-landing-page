@@ -58,6 +58,21 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <div className="bar">
+      <div id="bar-one" className="suntan-coral-bar"></div>
+      <div id="bar-two" className="sand-bar"></div>
+      <div id="bar-three" className="suntan-coral-bar"></div>
+    </div>
+    <div className="cta">
+      <h2>Want to be the first on our list?</h2>
+      <p className="btns">
+        {applyBtns.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <a className="secondary-btn" href={link.url}>{link.text}</a>
+          </React.Fragment>
+        ))}
+      </p>
+    </div>
   </Layout>
 )
 
