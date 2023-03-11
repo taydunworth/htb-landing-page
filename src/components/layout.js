@@ -46,6 +46,7 @@ const Layout = ({ children }) => {
               <h2>Let's stay in touch.</h2>
               <p>We’re still putting all of the pieces together, but we’d love for you to be one of the first to know when we launch the directory.</p>
               <p><strong>Sign up for emails, so you can be in the know.</strong></p>
+              <a className="primary-btn" href="https://zfrmz.com/PvPI2Q0Y8IRlMDOmCHw5" target="_blank">Sign Up</a>
             </div>
             <div className="footer-nav">
               <img id="alt-logo" src={AltLogo} alt="Handmade Tampa Bay Logo" />

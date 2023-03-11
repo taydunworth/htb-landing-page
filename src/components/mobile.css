@@ -52,10 +52,20 @@
     .subnav {
         left: 0px;
     }
+    .newsletter .primary-btn {
+        display: inline;
+    }
 }
 
 @media (max-width: 778px) {
     #hero-width {
         width: 90%;
+    }
+    #alt-logo {
+        left: -127px;
+    }
+    .newsletter .primary-btn {
+        display: block;
+        text-align: center;
     }
 }
